@@ -1,0 +1,12 @@
+# Source: cluster-api-byoh/templates/machinedeployment.yaml
+apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+kind: ByoMachineTemplate
+metadata:
+  name: b57dec14-e535-4758-9af6-8ed4ade0e4cd-md-tks
+  namespace: b57dec14-e535-4758-9af6-8ed4ade0e4cd
+spec:
+  template:
+    spec:
+      selector:
+        matchLabels:
+          role: tks
